@@ -1,7 +1,16 @@
 'use client'
 
 import React from "react"
-
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiPython,
+  SiSharp,
+  SiGithub,
+  SiWhatsapp,
+} from "react-icons/si";
 
 const phone = 51938985009
 const text = "🌹"
@@ -35,9 +44,10 @@ export default function Home() {
 
     return (
         <>
-            <button onClick={handleClick} className="mt-2 flex gap-3 border rounded-sm p-3 border-gray-500"><svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
-                <path d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.546l3.2 3.659a1 1 0 0 0 1.506 0L13.454 14H18a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-8 10H5a1 1 0 0 1 0-2h5a1 1 0 1 1 0 2Zm5-4H5a1 1 0 0 1 0-2h10a1 1 0 1 1 0 2Z"/>
-            </svg>Solicitar Servicio</button>
+            <button onClick={handleClick} className="mt-2 flex gap-3 items-center border rounded-sm p-3 border-gray-500">
+                <SiWhatsapp size={32} />
+                Cotizar Servicio
+            </button>
         </>
     )
 }

@@ -4,7 +4,7 @@ export default function Tienda() {
     return (
         <div className='w-dvw'>
             
-            <h1 className='text-center text-2xl'>Tienda</h1>   
+            <h1 className='text-center text-2xl'>Servicios</h1>   
         
         </div>
 

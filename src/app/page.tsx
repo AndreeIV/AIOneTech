@@ -15,11 +15,13 @@ import GradientText from "@/components/reactbits/GradientText";
 import AnimatedContent from "@/components/reactbits/AnimatedContent"
 import TrueFocus from "@/components/reactbits/TrueFocus";
 
+
 import TextType from "@/components/reactbits/TextType";
 import ButtonWhatsapp from "@/components/ButtonWhatsapp";
 
 // ICONS
 import { FaDev,  FaShieldHalved, FaToolbox} from "react-icons/fa6";
+import Link from "next/link";
 
 
 const techLogos = [
@@ -96,10 +98,13 @@ export default function Home() {
         </div>
       </div>
       
+      <div className="flex justify-center">
 
+          <ButtonWhatsapp></ButtonWhatsapp>
+        </div>
 
       {/* QUIEN SOY? */}
-      <div className="text-center w-dvw mt-20 mb-20">
+      <div className="text-center w-dvw mt-15 mb-20">
         <TextType
           style={{ color: "#DC2626" }}
           className="text-start ml-10 mb-4 text-2xl tracking-wider"
@@ -170,11 +175,16 @@ export default function Home() {
 
       {/* SERVICIOS */}
       <div className="w-dvw pl-5 pr-5">
-        <h2 className="text-2xl text-center font-extrabold pb-5">Soluciones Digitales</h2>
-        <p className="font-normal"> Soporte, Programación y Ciberseguridad</p>
-        <button className="m-auto">Saber Más</button>
-        <br /><br />
 
+        <div className="flex justify-center items-center flex-col">
+          <h2 className="text-2xl text-center font-extrabold pb-5">Soluciones Digitales</h2>
+          <p className="font-normal text-center"> Soporte Técnico, Programación Personalizada, Ciberseguridad y más.</p>
+          <button className="block border-2 rounded-sm px-6 py-3 mt-5">
+            <Link href="/servicios" aria-current="true" className='bg-gray-950/50 text-white hover:bg-white/5 hover:text-white'>Ver Servicios</Link>
+          </button>
+        </div>
+
+        <br /><br />
         
         <div className="flex flex-col md:flex-row gap-10 pl-5 pr-5">
 
@@ -187,15 +197,23 @@ export default function Home() {
           </div>
 
           <div className="bg-gray-900 rounded-2xl p-5 flex gap-5 justify-center">
-            <FaDev size={128}/>
+            <FaDev size={128} />
             <div className="flex flex-col justify-center ">
               <h3 className="text-start text-xl font-bold mb-5">Programas Propios</h3>
-              <p className="text-justify font-normal text-xs">Soluciones de software y script personalizados diseñados para facilitar tus tareas diarias</p>
+              <p className="text-justify font-normal text-xs">Soluciones de software y script personalizados diseñados para facilitar tus tareas diarias.</p>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 rounded-2xl p-5 flex gap-5 justify-center">
+            <FaShieldHalved size={128} />
+            <div className="flex flex-col justify-center">
+              <h3 className="text-start text-xl font-bold mb-5"> Seguridad Personal</h3>
+              <p className="text-justify font-normal text-xs">Protección de datos y limpieza de malware para mantener tu vida digital segura.</p>
             </div>
           </div>
         </div>
 
-        <ButtonWhatsapp></ButtonWhatsapp>
+        
 
       </div>
     </div>
