@@ -1,0 +1,50 @@
+import Navbar from '@/components/Navbar'
+import Masonry from '@/components/reactbits/Masonry'
+
+const items = [
+    {
+      id: "1",
+      img: "https://picsum.photos/id/1015/600/900?grayscale",
+      url: "https://example.com/one",
+      height: 400,
+    },
+    {
+      id: "2",
+      img: "https://picsum.photos/id/1011/600/750?grayscale",
+      url: "https://example.com/two",
+      height: 250,
+    },
+    {
+      id: "3",
+      img: "https://picsum.photos/id/1020/600/800?grayscale",
+      url: "https://example.com/three",
+      height: 600,
+    },
+    // ... more items
+];
+
+export default function SobreMi() {
+    return (
+        <>
+            
+            <h1 className='text-center mt-5 mb-5 text-2xl'>Galería de Proyectos</h1>   
+        
+            <div>
+
+
+            {/* <Masonry
+                items={items}
+                ease="power3.out"
+                duration={0.6}
+                stagger={0.05}
+                animateFrom="bottom"
+                scaleOnHover
+                hoverScale={0.95}
+                blurToFocus
+                colorShiftOnHover={true}
+                /> */}
+            </div>
+        </>
+
+    )
+}
